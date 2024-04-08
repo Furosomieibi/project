@@ -1,0 +1,224 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+html, body{
+    scroll-behavior: smooth;
+}
+
+/* HEADER */
+
+.navsection{
+    position: fixed;
+    display: flex;
+    background-color: darkgray;
+    padding: 8px 20px;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    z-index: 4;
+}
+
+.Logo{
+    /* width: 50px; */
+    aspect-ratio: 1;
+    height: 50px;
+    border-radius: 50%;
+    border: 1px solid red;
+}
+
+.menu_icon{
+    aspect-ratio: 1;
+    height: 50px;
+    border-radius: 50%;
+    border: 1px solid red;
+}
+
+.searchbar{
+    /* background-color: darkgray; */
+    display: inline-flex;
+    height: 50px;
+    border-radius: 8px;
+    overflow: hidden;
+    margin-left: 20px;
+    margin-right: 20px;
+    width: 100%;
+    max-width: 100%;
+}
+
+.searchbar [type="search"]{
+    border-radius: 8px 0 0 8px;
+    /* border: 1px solid black; */
+    width: 100%;
+    background-color: white;
+    padding: 4px;
+}
+
+.searchbutton{
+    background-color: aqua;
+}
+
+.searchbutton:hover{
+    background-color: skyblue;
+}
+
+#menu{
+    /* display: none; */
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 65px;
+}
+
+#menu ul{
+    background-color: bisque;
+    padding: 15px 10px;
+    /* border-radius: 5px; */
+}
+
+.navsection ul{
+    display: block;
+    list-style: none;
+    justify-content: space-between;
+    /* background-color: lightcoral; */
+    min-width: 250px;
+}
+
+#menu ul li{
+    margin: 10px;
+    width: 90%;
+    /* background-color: orange; */
+    border: none;
+}
+
+#menu ul li a{
+    display: block;
+}
+
+@media screen and (min-width:600px) {
+ 
+    .menu_icon{
+        display: none;
+    }
+
+    #menu{
+        display: inline-block;
+        position: relative;
+        top: 0;
+        right: 0;
+    }
+
+    .navsection ul{
+        display: flex;
+        list-style: none;
+        justify-content: space-between;
+        /* background-color: lightcoral; */
+        min-width: 250px;
+    }
+}
+
+
+.navsection ul a{
+    background-color: yellow;
+    padding: 4px;
+    border-radius: 6px;
+}
+
+.navsection ul a:hover, .navsection ul .active{
+    background-color: rgb(14, 235, 40);
+    color: black;
+}
+
+.hero{
+    height: 500px;
+    background-image: url('./img/ONE_PIECE.jpg');
+    color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1{
+    font-size: 60px;
+}
+
+/* MAIN */
+
+main{
+    min-height: 300px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    /* gap: 20px; */
+}
+
+.card{
+    background-color: aqua;
+    /* width: 200px; */
+    flex-basis: 200px;
+    min-height: 250px;
+    margin: 20px;
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+/* ASIDE1 */
+
+.aside1{
+    background-color: yellowgreen;
+}
+
+.figure1{
+    max-width: 800px;
+    background-color: green;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* .figure1all{
+    flex-grow: 1;
+} */
+
+.figure1cap{
+    width: 100%;
+    text-align: center;
+    flex-grow: 1;
+    padding: 10px;
+}
+
+.figure1p{
+    flex-grow: 2;
+    flex-basis: 490px;
+    padding: 10px;
+}
+
+.figure1img{
+    flex-grow: 1;
+    flex-basis: 50px;
+}
+
+.card img{
+    width: 100%;
+    /* aspect-ratio: 1/1; */
+}
+
+/* .card, p, button{
+    margin: 3px;
+} */
+
+/* FOOTER */
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+}
